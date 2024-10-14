@@ -1,0 +1,149 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #74b9ff, #55efc4);
+    padding: 20px;
+}
+
+/* Form Container */
+.form-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    backdrop-filter: blur(10px);
+}
+
+/* Input Fields */
+input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #74b9ff;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #0984e3;
+}
+
+/* Buttons */
+button {
+    padding: 12px;
+    font-size: 1rem;
+    background: #0984e3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #74b9ff;
+}
+
+/* Tasbih App Styling */
+.tasbih-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    max-width: 360px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+}
+
+.user-info i {
+    font-size: 2rem;
+    color: #0984e3;
+}
+
+/* Logout Button */
+.logout-btn {
+    background: none;
+    border: none;
+    color: #0984e3;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    transition: color 0.3s;
+}
+
+.logout-btn:hover {
+    color: #e17055;
+}
+
+.counter-display {
+    background: #dfe6e9;
+    margin: 20px auto;
+    padding: 20px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: inset 0 10px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #0984e3;
+}
+
+/* Button Group Styling */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn-icon {
+    background: #81ecec;
+    font-size: 1.5rem;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.btn-icon:hover {
+    background: #74b9ff;
+}
+
+.reset-btn {
+    margin-top: 15px;
+    background: #e17055;
+    width: 80%;
+}
+
+.reset-btn:hover {
+    background: #ff7675;
+}

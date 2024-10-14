@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Tasbih Counter</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Registration Form -->
+  <div class="form-container" id="registration-form">
+    <h2>Register</h2>
+    <input type="text" id="reg-name" placeholder="Enter Name" required />
+    <input type="email" id="reg-email" placeholder="Enter Email" required />
+    <input type="text" id="reg-username" placeholder="Choose Username" required />
+    <input type="password" id="reg-password" placeholder="Choose Password" required />
+    <button id="register-btn">Register</button>
+  </div>
+
+  <!-- Login Form -->
+  <div class="form-container" id="login-form" style="display: none;">
+    <h2>Login</h2>
+    <input type="text" id="login-username" placeholder="Username" required />
+    <input type="password" id="login-password" placeholder="Password" required />
+    <button id="login-btn">Login</button>
+  </div>
+
+  <!-- Tasbih Counter App -->
+  <div class="tasbih-container" id="tasbih-app" style="display: none;">
+    <div class="user-info">
+      <i class="fas fa-user-circle"></i>
+      <span id="display-username"></span>
+      <button id="logout-btn" class="logout-btn">
+        <i class="fas fa-sign-out-alt"></i>
+      </button>
+    </div>
+    <h1 class="title">Tasbih Counter</h1>
+
+    <div class="counter-display">
+      <span id="count">0</span>
+    </div>
+
+    <div class="button-group">
+      <button id="decrease" class="btn btn-icon">
+        <i class="fas fa-minus"></i>
+      </button>
+      <button id="increase" class="btn btn-icon large-btn">
+        <i class="fas fa-plus"></i>
+      </button>
+    </div>
+
+    <button id="reset" class="btn reset-btn">
+      <i class="fas fa-redo"></i> Reset
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
